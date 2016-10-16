@@ -12,9 +12,9 @@
 
   module.exports = function(robot) {
 
-    robot.router.post('/incoming/'+process.env.WEBHOOK_TOKEN, (req, res) => {
+    robot.router.post('/incoming/' + process.env.WEBHOOK_TOKEN, (req, res) => {
       let data    = req.body.payload != null ? JSON.parse(req.body.payload) : req.body;
-      let room    = data.room;
+      let room    = data.room != null ? data.room : process.env.WEBHOOK_DEFAULT_ROOM;
       let message = data.message;
 
       if (typeof room !== 'string' || typeof message === 'undefined') {
