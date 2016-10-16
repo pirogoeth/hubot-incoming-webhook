@@ -3,6 +3,7 @@
 //
 // Configuration:
 //   WEBHOOK_TOKEN: A string for building your secret webhook URL
+//   WEBHOOK_DEFAULT_ROOM: Room ID incase one is not specified in the webhook payload.
 //
 // Authors:
 //   Sebastian Kippe <sebastian@kip.pe>
