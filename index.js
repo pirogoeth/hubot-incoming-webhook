@@ -7,6 +7,7 @@
 //
 // Authors:
 //   Sebastian Kippe <sebastian@kip.pe>
+//   Sean Johnson <pirogoeth@maio.me>
 
 (function () {
   "use strict";
